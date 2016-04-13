@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Catalogo de peliculas</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>	
+	<script src="https://code.angularjs.org/1.4.0-beta.5/angular-route.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-sanitize.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.2.js"></script>  	
+	<script src="movies.json"></script>	
+	<script src="bootstrap.js"></script> 
+	<script src="javascript.js"></script> 
+	<script src="controlador.js"></script>  
+	<script src="ui-bootstrap-tpls-0.12.1.min.js"></script>  
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link  href="mystyle.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="">MyWebSiteName</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li><a href="#/">Inicio</a></li>
+        <li><a href="#/catalogo">Catalogo</a></li>
+        <li><form class="navbar-form pull-left"><input type="text" class="form-control " placeholder="Buscar pelicula" ng-model="$scope.filter" >
+            </form></li>
+        <li><a href="" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a></li> 
+        <li><a href="" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a></li> 
+        <li><a href="" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+
+<div  ng-view>
+	
+
+</div>
+
+<footer id="footer">
+
+			<div class="container text-center">
+
+				<h2 class="copyright">Copyright© My Website 2015 All Rights Reserved.</h2>
+
+				Home / Top Songs / Top Albums / Signup /Legal & DCMA / Wordpress Plugin / Privacy Policy / Terms of Service
+ 
+
+				
+			</div>
+
+		</footer>
+
+
+</body>
+</html>
+
+

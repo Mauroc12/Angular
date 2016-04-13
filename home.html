@@ -1,0 +1,68 @@
+
+
+ 
+  
+    <div class="container">
+
+        <div class="row">
+ 
+                </div>
+            <div class="col-md-3">
+
+                <h3 class="lead">Ganadores Oscars 2015</h3>
+                <div class="list-group">
+                    <a href="#/details/Birdman" class="list-group-item"><strong>Mejor pelicula</strong></a>
+                    <a href="#/details/The Theory of Everything" class="list-group-item"><strong>Mejor Actor</strong></a>
+                    <a href="#/details/Still alice" class="list-group-item"><strong>Mejor Actriz</strong></a>
+                    <a href="#/details/Whiplash" class="list-group-item"><strong>Mejor Actor Secundario</strong></a>
+                    <a href="#/details/boyhood" class="list-group-item"><strong>Mejor Actriz Secundario</strong></a>
+                    <a href="#/details/ida" class="list-group-item"><strong>Mejor Pelicula de Habla Hispana</strong></a>
+                    <a href="#/details/Big Hero 6" class="list-group-item"><strong>Mejor Pelicula de Animacion</strong></a>
+                    <a href="#/details/The Grand Budapest Hotel" class="list-group-item"><strong>Mejor Banda Sonora</strong></a>
+                    <a href="#/details/American Sniper" class="list-group-item"><strong>Mejor Edicion de Sonido</strong></a>
+
+                </div> 
+
+                 
+                   </div>
+
+
+
+
+            <div class="col-md-9">
+
+            </br>
+
+
+
+              
+
+
+            <div class="row">
+ 
+
+                    <div class="col-sm-4 col-lg-4 col-md-4" ng-repeat="movie in movies | limitTo:6">
+                        <div class="thumbnail" >
+                            <img src="{{movie.image}}" alt="">
+                            <div class="caption">
+                           
+                               <h4><a href="#/details/{{movie.name}}"> {{movie.name}}</a></h4>
+                                <p>  {{movie.year}} | {{movie.genero}} | {{movie.duration}} min. </p>
+                                                          </div>
+                            
+                        </div>
+                    </div>
+<a href="#/catalogo"><button type="button" class="btn btn-primary btn-lg btn-block">Ver todas las peliculas</button></a>
+                     </div>
+
+                     <tabset>
+ 
+
+            </div>
+
+        </div>
+
+       </div>
+
+
+   

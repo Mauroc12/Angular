@@ -1,0 +1,53 @@
+<div class="container">
+<div class="row"> 
+
+<div class="col-md-3" >
+
+  <div class="new table-bordered">
+     <ul class="nav nav-list ">
+        <li><a href="" ng-model="$scope.filter" btn-radio="" >Todos los Generos</a></li>
+        <li><a href="" ng-model="$scope.filter" btn-radio="'accion'">Accion</a></li>
+        <li><a href="" ng-model="$scope.filter" btn-radio="'animacion'">Animacion</a></li>
+        <li><a href="" ng-model="$scope.filter" btn-radio="'biografia'">Biografia</a></li>
+        <li><a href="" ng-model="$scope.filter" btn-radio="'ciencia-ficcion'">Ciencia-Ficcion</a></li>
+        <li><a href="" ng-model="$scope.filter" btn-radio="'comedia'">Comedia</a></li>
+        <li><a href="" ng-model="$scope.filter" btn-radio="'drama'">Drama</a></li>
+        <li><a href="" ng-model="$scope.filter" btn-radio="'fantasia'">Fantasia</a></li>
+        <li><a href="" ng-model="$scope.filter" btn-radio="'suspenso'">Suspenso </a></li>
+        <li><a href="" ng-model="$scope.filter" btn-radio="'thriller'">Thriller</a></li>      
+      </ul></div>
+     </br></br></br>
+
+  </div>
+
+
+
+<div class="col-md-9">
+
+
+
+Ordenar por:<div class="btn-group">
+              <label class="btn btn-primary " ng-model="$scope.field" btn-radio="'name'">Nombre</label>
+              <label class="btn btn-primary " ng-model="$scope.field" btn-radio="'year'">Año</label>
+              <label class="btn btn-primary " ng-model="$scope.field" btn-radio="'duration'">Duracion</label>
+              <label class="btn btn-primary " ng-model="$scope.field" btn-radio="'genero'">Genero</label>
+            </div> <hr>
+    
+<div class="col-md-3" ng-repeat="movie in movies | filter:$scope.filter | orderBy:$scope.field">
+                  <div class="thumbnail" >
+                       <img src="{{movie.image}}" alt="">
+                            <div class="caption">                         
+                              <h4><a href="#/details/{{movie.name}}"> {{movie.name}}</a></h4>
+                               <p>  {{movie.year}} | {{movie.genero}} | {{movie.duration}} min.</p>
+                            </div>                               
+                  </div>
+</div>
+
+     </div>
+
+
+
+</div>
+</div>
+
+</div>

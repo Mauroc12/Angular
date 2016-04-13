@@ -1,0 +1,44 @@
+<div class="container">
+  
+<div class="row" >
+  <div class="details">
+     <div class="col-md-10 col-md-offset-1 table-bordered"> 
+    
+    <div class="col-md-4 ">
+        <img id="poster" ng-src="{{movieDetail.image}}" alt="poster">
+    </div>
+ 
+
+           <div class="col-md-8 "> 
+        <h3> Sinopsis</h3>   
+          {{movieDetail.description}}</br>
+    </div></div></div>
+</div>
+
+</br></br></br>
+
+<div class="row"><div class="details">
+<div class="col-md-8 col-md-offset-2 table-bordered"> 
+
+
+  
+  <h2>Ficha Tecnica</h2></br>
+        <strong> Nombre:</strong>     {{movieDetail.name}}</br>
+        <strong> Sinopsis: </strong></br>  {{movieDetail.description}}</br>
+        <strong> Duracion:</strong>   {{movieDetail.duration}} min.</br>
+        <strong> Año:</strong>        {{movieDetail.year}}</br>
+        <strong> Genero:</strong>     {{movieDetail.genero}}</br>
+        <strong> Director: </strong>  {{movieDetail.director}}</br>
+         <strong>  Imdb:</strong>   <img src="https://static.squarespace.com/static/51b3dc8ee4b051b96ceb10de/51ce6099e4b0d911b4489b79/51ce61c5e4b0d911b44a01e5/1293802259447/1000w/IMDb%20Logo.jpg" ng-click="open()" value="imdb" width="75" height="50" ></br>
+        <strong>  Actores:</strong> <button ng-click="change()" value="mostrar actores">
+                                         {{ actorShow== false && "Mostrar Actores" || "Ocultar actores"}}</button></br></br>
+                                        <ul ng-show="actorShow" >
+                                            <li ng-repeat="actor in movieDetail.actor">{{actor}}</li>
+                                        </ul>
+  <strong>  Ver Trailer:</strong> </br>
+  <iframe width="600" height="400" ng-src="{{trustSrc(movieDetail.trailer)}}" frameborder="0" allowfullscreen></iframe>
+</div></div>
+
+
+</div></div>
+

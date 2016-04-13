@@ -1,0 +1,90 @@
+body{background-color: #e5e5e5;
+  background-color: white;}
+
+.details{background-color: white;}
+
+.row-details{background-color: black;}
+
+.home{margin-top: 0px;
+  background-color: white;
+  color: black;}
+
+.col-md-2 img {
+margin-top: 10px;
+padding-left: 10px;
+padding-right: 10px; 
+width: 120px;
+height: 160px;} 
+
+.row .col-md-4 img {
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 40px;
+padding-left: 10px;
+width:300px;
+height: 400px;}
+
+footer {
+background-color: #3b3b3b;
+color: #FFF;}
+
+.well img{width:75; height:50;}
+
+.col-md-6{margin-top: 10px;
+padding-top: 25px;
+margin-bottom: 10px;
+}
+
+iframe {padding-left: 100px;}
+
+.form-control{width: 750px;
+margin-left: 200px; }
+
+#footer{  height: 300px;
+margin-top: 50px;
+padding-bottom: 50px;
+padding-top: 50px;
+background: #000;
+color:white;}
+
+#footer h2{color:orange;}
+
+.col-md-3 img{width: 200px;
+height: 250px;}
+
+
+
+.navbar{
+padding-left:50px;
+background-color: white;
+margin-bottom: 20px;
+height: 55px;
+font-family: ITC Lubalin Graph Medium;
+font-size: 1.16666667em; }
+
+.navbar a:hover{background-color: black; color:white}
+
+.navbar input {background-color: #3c3c3c;;
+color:white;  }
+    
+.menu{background-color:#222;
+padding: 10px 10px 10px 10px;
+color:white;
+border-radius: 5px;}
+
+.menu a{color:white;}
+
+.menu a:hover {color:orange;};
+
+.navbar-inverse a{color:white;}
+
+.new {background-color:  white;
+  border-radius: 5px;}
+
+.new a{color:black;}
+
+.new a:hover{color:black}
+
+.new a:focus{color:black;}
+
+
